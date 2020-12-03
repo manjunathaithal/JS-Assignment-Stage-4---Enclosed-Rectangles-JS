@@ -74,10 +74,10 @@ function normalize(rec) {
       ? parseInt(rec.left)
       : W - (parseInt(rec.right) + parseInt(rec.width)),
     x2: rec.bottom
-      ? parseInt(rec.bottom)
+      ? T - parseInt(rec.bottom)
       : parseInt(rec.top) + parseInt(rec.height),
     y2: rec.right
-      ? parseInt(rec.right)
+      ? W - parseInt(rec.right)
       : parseInt(rec.left) + parseInt(rec.height),
   };
 }
