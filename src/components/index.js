@@ -26,8 +26,8 @@ function contains(recA, recB) {
   if (
     recAn.x1 <= recBn.x1 &&
     recAn.y1 <= recBn.y1 &&
-    recAn.x2 <= recBn.x2 &&
-    recAn.y2 <= recBn.y2
+    recAn.x2 >= recBn.x2 &&
+    recAn.y2 >= recBn.y2
   ) {
     return true;
   }
