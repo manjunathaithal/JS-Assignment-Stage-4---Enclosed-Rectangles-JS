@@ -55,11 +55,11 @@ function relative(recA, recB) {
   }
 
   if (recB.bottom) {
-    res.bottom = `${recBn.x2 - recAn.x2}px`;
+    res.bottom = `${recAn.x2 - recBn.x2}px`;
   }
 
   if (recB.right) {
-    res.right = `${recBn.y2 - recAn.y2}px`;
+    res.right = `${recAn.y2 - recBn.y2}px`;
   }
   return res;
 }
